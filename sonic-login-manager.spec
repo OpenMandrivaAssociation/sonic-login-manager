@@ -41,6 +41,11 @@ BuildRequires: %{_lib}sonic-workspace-devel
 
 BuildRequires: pam pkgconfig gettext
 
+# For /etc/X11/Xsession
+Requires: xinitrc
+%systemd_requires
+Provides: dm
+
 %description
 %summary
 
